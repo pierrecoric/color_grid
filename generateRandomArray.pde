@@ -6,7 +6,7 @@ void generateRandomArray(int rows, int cols) {
       int randomValue;
 
       do {
-        randomValue = int(random(1,7));
+        randomValue = int(random(0,numSteps));
       } while (hasSameNeighbor(randomArray, y, x, randomValue));
       randomArray[y][x] = randomValue;
       print(randomArray[y][x]);

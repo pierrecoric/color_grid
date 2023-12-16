@@ -1,5 +1,5 @@
-int cols = 40;
-int rows = 80;
+int cols = 8;
+int rows = 4;
 
 color c0 = #D8DBE2;
 color c1 = #D8DBE2;
@@ -12,9 +12,9 @@ color cute[] = {c0, c1, c2, c3, c4, c5, c6};
 
 
 //to generate nuances of grey
-int numSteps = 15;
+int numSteps = 5;
 color grey0 = #D8DBE2;
-color grey2 = #000000;
+color grey1 = #000000;
 color[] greyNuances = new color[numSteps];
 
 
@@ -23,11 +23,12 @@ int[][] randomArray;
 void setup() {
   size(800, 800);
   noStroke();
+  generateGrey();
   generateRandomArray(rows, cols);
   populate();
   save("exports/ok.jpg");
 }
 
 void draw() {
-  // Draw your visual representation here if needed
+ 
 }
